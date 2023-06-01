@@ -1,0 +1,63 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.Position = UDim2.new(0.0876190513, 0, 0.180371359, 0)
+Frame.Size = UDim2.new(0, 843, 0, 481)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.132858828, 0, 0.189189196, 0)
+Frame_2.Size = UDim2.new(0, 300, 0, 300)
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = Frame_2
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.Position = UDim2.new(0.439999998, 0, 0.0833333358, 0)
+Frame_3.Size = UDim2.new(0, 54, 0, 250)
+
+Frame_4.Parent = Frame_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.Position = UDim2.new(0.0833333358, 0, 0.449999988, 0)
+Frame_4.Size = UDim2.new(0, 250, 0, 51)
+
+Frame_5.Parent = Frame_2
+Frame_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.Position = UDim2.new(0.0833333358, 0, 0.286666662, 0)
+Frame_5.Size = UDim2.new(0, 33, 0, 75)
+
+Frame_6.Parent = Frame_2
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.Position = UDim2.new(0.806666672, 0, 0.463333338, 0)
+Frame_6.Size = UDim2.new(0, 33, 0, 75)
+
+Frame_7.Parent = Frame_2
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_7.Position = UDim2.new(0.463333338, 0, 0.0833333358, 0)
+Frame_7.Size = UDim2.new(0, 74, 0, 45)
+
+Frame_8.Parent = Frame_2
+Frame_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_8.Position = UDim2.new(0.263333321, 0, 0.813333333, 0)
+Frame_8.Size = UDim2.new(0, 82, 0, 31)
