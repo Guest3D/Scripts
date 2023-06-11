@@ -1,0 +1,242 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CompassGui = Instance.new("ScreenGui")
+local Compass = Instance.new("Frame")
+local SouthWest = Instance.new("TextLabel")
+local West = Instance.new("TextLabel")
+local SouthEast = Instance.new("TextLabel")
+local South = Instance.new("TextLabel")
+local NorthWest = Instance.new("TextLabel")
+local NorthEast = Instance.new("TextLabel")
+local North = Instance.new("TextLabel")
+local East = Instance.new("TextLabel")
+
+--Properties:
+
+CompassGui.Name = "CompassGui"
+CompassGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CompassGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Compass.Name = "Compass"
+Compass.Parent = CompassGui
+Compass.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Compass.BackgroundTransparency = 1.000
+Compass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Compass.BorderSizePixel = 0
+Compass.ClipsDescendants = true
+Compass.LayoutOrder = 1000
+Compass.Position = UDim2.new(0.25, 0, 0.0500000007, 0)
+Compass.Size = UDim2.new(0.5, 0, 0.0500000007, 0)
+
+SouthWest.Name = "SouthWest"
+SouthWest.Parent = Compass
+SouthWest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SouthWest.BackgroundTransparency = 1.000
+SouthWest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SouthWest.BorderSizePixel = 0
+SouthWest.Position = UDim2.new(0.0757359341, -15, 0, 3)
+SouthWest.Size = UDim2.new(0, 30, 1, -6)
+SouthWest.Visible = false
+SouthWest.ZIndex = 2
+SouthWest.Font = Enum.Font.GothamBlack
+SouthWest.Text = "SW"
+SouthWest.TextColor3 = Color3.fromRGB(255, 255, 255)
+SouthWest.TextScaled = true
+SouthWest.TextSize = 18.000
+SouthWest.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+SouthWest.TextWrapped = true
+
+West.Name = "West"
+West.Parent = Compass
+West.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+West.BackgroundTransparency = 1.000
+West.BorderColor3 = Color3.fromRGB(0, 0, 0)
+West.BorderSizePixel = 0
+West.Position = UDim2.new(-0.100000001, -10, 0, 3)
+West.Size = UDim2.new(0, 20, 1, -6)
+West.Visible = false
+West.ZIndex = 2
+West.Font = Enum.Font.GothamBlack
+West.Text = "W"
+West.TextColor3 = Color3.fromRGB(255, 255, 255)
+West.TextScaled = true
+West.TextSize = 18.000
+West.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+West.TextWrapped = true
+
+SouthEast.Name = "SouthEast"
+SouthEast.Parent = Compass
+SouthEast.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SouthEast.BackgroundTransparency = 1.000
+SouthEast.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SouthEast.BorderSizePixel = 0
+SouthEast.Position = UDim2.new(0.924264073, -15, 0, 3)
+SouthEast.Size = UDim2.new(0, 30, 1, -6)
+SouthEast.Visible = false
+SouthEast.ZIndex = 2
+SouthEast.Font = Enum.Font.GothamBlack
+SouthEast.Text = "SE"
+SouthEast.TextColor3 = Color3.fromRGB(255, 255, 255)
+SouthEast.TextScaled = true
+SouthEast.TextSize = 18.000
+SouthEast.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+SouthEast.TextWrapped = true
+
+South.Name = "South"
+South.Parent = Compass
+South.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+South.BackgroundTransparency = 1.000
+South.BorderColor3 = Color3.fromRGB(0, 0, 0)
+South.BorderSizePixel = 0
+South.Position = UDim2.new(0.5, -10, 0, 3)
+South.Size = UDim2.new(0, 20, 1, -6)
+South.Visible = false
+South.ZIndex = 2
+South.Font = Enum.Font.GothamBlack
+South.Text = "S"
+South.TextColor3 = Color3.fromRGB(255, 255, 255)
+South.TextScaled = true
+South.TextSize = 18.000
+South.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+South.TextWrapped = true
+
+NorthWest.Name = "NorthWest"
+NorthWest.Parent = Compass
+NorthWest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NorthWest.BackgroundTransparency = 1.000
+NorthWest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NorthWest.BorderSizePixel = 0
+NorthWest.Position = UDim2.new(0.0757359341, -15, 0, 3)
+NorthWest.Size = UDim2.new(0, 30, 1, -6)
+NorthWest.ZIndex = 2
+NorthWest.Font = Enum.Font.GothamBlack
+NorthWest.Text = "NW"
+NorthWest.TextColor3 = Color3.fromRGB(255, 255, 255)
+NorthWest.TextScaled = true
+NorthWest.TextSize = 18.000
+NorthWest.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+NorthWest.TextWrapped = true
+
+NorthEast.Name = "NorthEast"
+NorthEast.Parent = Compass
+NorthEast.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NorthEast.BackgroundTransparency = 1.000
+NorthEast.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NorthEast.BorderSizePixel = 0
+NorthEast.Position = UDim2.new(0.924264073, -15, 0, 3)
+NorthEast.Size = UDim2.new(0, 30, 1, -6)
+NorthEast.ZIndex = 2
+NorthEast.Font = Enum.Font.GothamBlack
+NorthEast.Text = "NE"
+NorthEast.TextColor3 = Color3.fromRGB(255, 255, 255)
+NorthEast.TextScaled = true
+NorthEast.TextSize = 18.000
+NorthEast.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+NorthEast.TextWrapped = true
+
+North.Name = "North"
+North.Parent = Compass
+North.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+North.BackgroundTransparency = 1.000
+North.BorderColor3 = Color3.fromRGB(0, 0, 0)
+North.BorderSizePixel = 0
+North.Position = UDim2.new(0.5, -10, 0, 3)
+North.Size = UDim2.new(0, 20, 1, -6)
+North.ZIndex = 2
+North.Font = Enum.Font.GothamBlack
+North.Text = "N"
+North.TextColor3 = Color3.fromRGB(255, 255, 255)
+North.TextScaled = true
+North.TextSize = 18.000
+North.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+North.TextWrapped = true
+
+East.Name = "East"
+East.Parent = Compass
+East.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+East.BackgroundTransparency = 1.000
+East.BorderColor3 = Color3.fromRGB(0, 0, 0)
+East.BorderSizePixel = 0
+East.Position = UDim2.new(1.10000002, -10, 0, 3)
+East.Size = UDim2.new(0, 20, 1, -6)
+East.Visible = false
+East.ZIndex = 2
+East.Font = Enum.Font.GothamBlack
+East.Text = "E"
+East.TextColor3 = Color3.fromRGB(255, 255, 255)
+East.TextScaled = true
+East.TextSize = 18.000
+East.TextStrokeColor3 = Color3.fromRGB(100, 100, 100)
+East.TextWrapped = true
+
+-- Scripts:
+
+local function BKXGOL_fake_script() -- Compass.CompassScript 
+	local script = Instance.new('LocalScript', Compass)
+
+	local Smoothness = 30 / 10
+	
+	local Player = game.Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	
+	local Compass = script.Parent
+	
+	local LastY = 0
+	local Units = {
+		
+		[Compass:WaitForChild("North")]		= -math.pi * 1.00;
+		[Compass:WaitForChild("NorthEast")] = -math.pi * 0.75;
+		
+		[Compass:WaitForChild("East")] 		= -math.pi * 0.50;
+		[Compass:WaitForChild("SouthEast")]	= -math.pi * 0.25;
+		
+		[Compass:WaitForChild("South")]		=  math.pi * 0.00;
+		[Compass:WaitForChild("SouthWest")]	=  math.pi * 0.25;
+		
+		[Compass:WaitForChild("West")]		=  math.pi * 0.50;
+		[Compass:WaitForChild("NorthWest")]	=  math.pi * 0.75;
+		
+	}
+	
+	function RestrictAngle(Angle)
+		if Angle < -math.pi then
+			return Angle + math.pi * 2
+		elseif Angle > math.pi then
+			return Angle - math.pi * 2
+		else
+			return Angle
+		end
+	end
+	
+	while true do
+		local WaitTime = wait(0.001)
+	
+		local Look = Camera.CoordinateFrame.LookVector
+		local ook = Vector3.new(Look.X, 0, Look.Z).Unit
+		local LookY = math.atan2(Look.Z, Look.X)
+	
+		local DifferenceY = RestrictAngle(LookY - LastY)
+		LookY = RestrictAngle(LastY + DifferenceY * WaitTime * Smoothness)
+		LastY = LookY
+	
+		for Unit, Rotation in pairs(Units) do
+			Rotation = RestrictAngle(LookY - Rotation)
+			if math.sin(Rotation) > 0 then
+				local CosineRotation = math.cos(Rotation)
+				local CosineRotation2 = CosineRotation * CosineRotation
+	
+				Unit.Visible = true
+				Unit.Position = UDim2.new(0.5 + CosineRotation * 0.6, Unit.Position.X.Offset, 0, 3)
+	
+				Unit.TextTransparency = -0.25 + 1.25 * CosineRotation2
+			else
+				Unit.Visible = false
+			end
+		end
+	end
+	
+end
+coroutine.wrap(BKXGOL_fake_script)()
