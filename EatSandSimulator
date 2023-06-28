@@ -1,0 +1,37 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+            local player = game:GetService("Players").LocalPlayer
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+local Window = Library:NewWindow("Eat Sand Simulator")
+
+local Section = Window:NewSection("Options")
+Section:CreateToggle("Auto Scoop/Eat", function(value)
+enabled = false
+if value then
+enabled = true
+else
+enabled = false
+end
+while enabled do
+            if tool and tool:FindFirstChild("Handle") then
+                tool:Activate()
+               end
+wait()
+end
+end)
+
+Section:CreateToggle("Anti Stop", function(value)
+enabled = false
+if value then
+enabled = true
+else
+enabled = false
+end
+while enabled do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+wait()
+end
+end)
+
+Section:CreateButton("YT : SECRETDEV", function()
+print("MADE BY SECRETDEV")
+end)
