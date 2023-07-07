@@ -1,0 +1,22 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+            local player = game:GetService("Players").LocalPlayer
+            local tool = player.Character and player.Character:FindFirstChildOfClass("Tool")
+local Window = Library:NewWindow("Slap Fight Simulator")
+
+local Section = Window:NewSection("Options")
+Section:CreateToggle("Auto Win", function(value)
+_G.enabled = false
+if value then
+_G.enabled = true
+else
+_G.enabled = false
+end
+while _G.enabled do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Sets6.Set7.Part.CFrame
+			local humanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+			local targetPosition = humanoidRootPart.Position + humanoidRootPart.CFrame.lookVector * 2
+	
+			game.Players.LocalPlayer.Character.Humanoid:MoveTo(targetPosition)
+wait(3)
+end
+end)
