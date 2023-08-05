@@ -1,10 +1,10 @@
 local Plugin = {
-	["PluginName"] = "Chat Spy",
-	["PluginDescription"] = "Spy on Messages",
+	["PluginName"] = "Copy CFrame",
+	["PluginDescription"] = "Copy Your CFrame",
 	["Commands"] = {
 		["chatspy"] = {
-			["ListName"] = "chatspy",
-			["Description"] = "Spy on Messages",
+			["ListName"] = "copycframe",
+			["Description"] = "Copy Your CFrame",
 			["Aliases"] = {},
 			["Function"] = function(args, speaker)
 				setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame))
